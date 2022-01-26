@@ -50,7 +50,7 @@ if ($script:balloonToolTip -eq $null)
 
 $script:balloonToolTip = New-Object System.Windows.Forms.NotifyIcon 
 }
-$icon_path = "C:\Users\drewp\Documents\PowerShell_Working\btc.ico"
+$icon_path = $PWD + "\btc.ico"
 $balloonToolTip.Icon = [System.Drawing.Icon]$icon_path
 $balloonToolTip.BalloonTipIcon = $Icon
 $balloonToolTip.BalloonTipText = $Text
