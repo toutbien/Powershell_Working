@@ -1,4 +1,4 @@
-$dir = $env:USERPROFILE + "\Documents\dupdownloadstest"
+$dir = $env:USERPROFILE + "\Downloads"
 $dupdownloads = Get-ChildItem -Path $dir | where {$_.Name -match '[(\d)].txt'} 
 
 if (-not (Test-Path "duplicates.csv")){
